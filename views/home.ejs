@@ -1,28 +1,128 @@
-<%- include('partials/header.ejs')%>
-  <footer>
-    <div class="container">
-      <div class="row align-items-end">
-        <div class="col-sm-4">
-          <a href="https://api.whatsapp.com/send?phone=555499844103&fbclid=IwAR2Hnup7l1eTb8qnjZP4aDVdBj9M67TqoaSpscqtZLlzHuOWfAJSNMYdXtQ">
-          <img src="img/logowhats.png" alt="Logo do whatsapp"></a>
-          <a href="https://api.whatsapp.com/send?phone=555499844103&fbclid=IwAR2Hnup7l1eTb8qnjZP4aDVdBj9M67TqoaSpscqtZLlzHuOWfAJSNMYdXtQ">
-            (54)99984-4103 </a>
-        </div>
-        <div class="col-sm-4">
-          <div>
-            <a href="https://www.facebook.com/AN-store-100902951711290">
-            <img src="img/logofacebook.png" alt="Logo do facebook"></a>
-          </div>
-          <a href="https://www.facebook.com/AN-store-100902951711290"> AN store </a>
-        </div>
-        <div class="col-sm-4">
-          <div>
-            <a href="https://www.instagram.com/anstore._/">
-            <img src="img/logoinstagram.png" alt="Logo do instagram"></a>
-          </div>
-          <a href="https://www.instagram.com/anstore._/"> anstore._ </a>
-        </div>
-      </div>
-    </div>
+<%- include('partials/header.ejs') %>
+<body>
+   <%- include('partials/navbar.ejs') %>
+   <body>
+      
 
-  </footer>
+      <!-- imagem topo-->
+      <img src="img/foto_head.png" style="margin-top: 6em; width: 100%; height: 40em; padding: 0; 
+      border-radius: 0;">
+
+      
+      <section class="exemplo">
+         <img src="img/mais acessadas/fundo.png" style="width: 100%; padding: 0;border-radius: 0;">    
+         <div class="fundo" style="text-align: center; margin-top: 3%;">
+            <a href="/produtos">
+               <img src="img/peças mais acessadas cima/cima.png" style="width: 45%">
+            </a>
+         </div>
+      </section>
+      
+         
+
+      
+     <!-- carrousel de imagens -->
+      <div id="background-slide">
+         <br>
+         <br>
+         <!-- texto -->
+         <h1 id="text-promotions">Aproveite <br> nossas promoções!</h1>
+
+         <!-- carrosel de imagens -->
+         <br>
+         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" ">
+            <div class="carousel-inner" >
+               <div class="carousel-item row no-gutters active">
+                  <div class="col-4 float-left">    
+                        <img class="d-block w-100 p-2 "style="border-radius: 30px" src="img/promoçoes/vestido.png" alt="1">
+                  </div>
+              
+                  <div class="col-4 float-left">    
+                        <img class="d-block w-100 p-2" style="border-radius: 30px" src="img/promoçoes/vestido.png" alt="2">
+                  </div>
+              
+                  <div class="col-4 float-left">    
+                        <img class="d-block w-100 p-2" style="border-radius: 30px" src="img/promoçoes/vestido.png" alt="3">
+                  </div>
+   
+              
+       
+            </div>
+          
+          
+            <div class="carousel-item row no-gutters">
+               <div class="col-4 float-left">    
+                     <img class="d-block w-100 p-2" style="border-radius: 30px" src="img/promoçoes/vestido.png" alt="5">
+               </div>
+               
+               <div class="col-4 float-left">    
+                     <img class="d-block w-100 p-2" style="border-radius: 30px"src="img/promoçoes/vestido.png" alt="6">
+               </div>
+               
+               <div class="col-4 float-left">    
+                     <img class="d-block w-100 p-2" style="border-radius: 30px" src="img/promoçoes/vestido.png" alt="7">
+               </div>
+               
+               
+            
+            </div>
+         
+         
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+            </a>
+         </div>
+      </div>
+   </div>
+
+
+      
+      
+      
+      
+      
+      
+      
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+         
+         #background-slide{
+            background-color: #f3705c;
+         }
+         
+         #text-promotions{
+            font-size: 5em;
+            margin: 0;
+
+            text-align: left;
+            font-family: 'Rubik', sans-serif;
+            color: #ffcdaa;
+         }
+         
+         .exemplo {
+            background: url("fundo.jpg");
+            position: relative;
+         }
+
+         .exemplo .fundo {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+         }
+         
+
+      
+   </style>
+  
+  <%- include('partials/footer.ejs') %>
+</body>
+
+
+
+
